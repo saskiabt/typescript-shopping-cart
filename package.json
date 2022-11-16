@@ -8,6 +8,7 @@
     "@types/express": "^4.17.14",
     "@types/mongoose": "^5.11.97",
     "@types/node": "^18.11.9",
+    "@types/uuid": "^8.3.4",
     "nodemon": "^2.0.20",
     "prettier": "2.7.1",
     "typescript": "^4.8.4"
@@ -15,18 +16,28 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "frontend": "cd frontend && npm start",
-    "start": "node backend/dist/server.js",
+    "start": "ts-node backend/dist/server.js",
     "serve": "concurrently \"tsc -w\" \"nodemon backend/dist/server.js\"",
-    "dev": "concurrently \"npm run serve \"npm run frontend\""
+    "dev": "concurrently \"npm run serve\" \"npm run frontend\""
   },
   "author": "Saskia Binder",
   "license": "ISC",
   "dependencies": {
+    "@mikro-orm/cli": "^5.5.3",
+    "@mikro-orm/core": "^5.5.3",
+    "@mikro-orm/migrations": "^5.5.3",
+    "@mikro-orm/postgresql": "^5.5.3",
+    "apollo-server-core": "^3.11.1",
+    "apollo-server-express": "^3.11.1",
     "concurrently": "^7.5.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
-    "ts-node": "^10.9.1"
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.8.0",
+    "pg": "^8.8.0",
+    "ts-node": "^10.9.1",
+    "uuid": "^9.0.0"
   }
 }

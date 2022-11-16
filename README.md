@@ -1,1 +1,1 @@
-NodeJS Backend with GraphQL Server making queries to a MongoDB database. React app with Apollo on the frontend.
+E-commerce site of shoes from the Met Museum fashion collection. full-stack site with Typescript. NodeJS, GraphQL and Express Backend, makes queries to MongoDB database with mongoose. Frontend in React with Apollo and Redux.
